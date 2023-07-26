@@ -1,0 +1,215 @@
+nav{
+  height: 60px;
+ 
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-transform: capitalize;
+ 
+  font-size: larger;
+}
+
+.para{
+ 
+  position: absolute;
+  top:200px;
+  z-index: 9999;
+  width: 500px;
+  left: 90px;
+  padding: 20px;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+
+}
+.sidebar{
+  background-color: white;
+  height: 100%;
+  width: 80%;
+  position: absolute;
+  top: 2%;
+  left:10%;
+
+border:1px solid rgb(12, 11, 11);
+transition: display 3s ease-in-out;
+
+  display: none;
+
+}
+
+.body::after{
+  content: "";
+  position: absolute;
+  top:0px;
+  right:0px;
+  left:0px;
+  bottom:0px;
+  z-index: -1000;
+ opacity: 0.8;
+  background-color: rgb(28, 24, 24);
+}
+
+.ham{
+  font-size: larger;
+  margin-right: 20px;
+  margin-top: 15px;
+  display: none;
+}
+.ham:hover{
+  font-size: xx-large;
+}
+.btn-show-modal{
+  margin-top: 50%;
+  margin-left: 50%;
+  background-color: black;
+  color: white;
+  padding: 7px;
+}
+img{
+  height: 60px;
+  width: 60px;
+}
+.sub-list{
+  list-style-type: none;
+  padding-left: 10px;
+  text-transform: capitalize;
+
+
+  
+}
+h5{
+  text-transform: capitalize;
+}
+.each-list{
+  display: grid;
+  grid-template-columns: 100px 100px;
+  gap:20px;
+  font-size:0.8rem;
+}
+.sub-sidebar{
+padding: 0px 20px;
+
+}
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+ 
+}
+.sub-list li{
+
+  display: flex;
+  justify-content: space-between;
+  
+ 
+
+
+}
+.sub-list li:hover{
+  background-color:rgb(131, 211, 221) ;
+}
+
+.close{
+  position: absolute;
+  right: 2px;
+  top:2px;
+  font-size: larger;
+}
+.show-sidebar{
+  display: block;
+  
+}
+.show-modalbar{
+  display: block;
+}
+.nav-list{
+  display: flex;
+  text-transform: capitalize;
+  list-style: none;
+   color: white;
+}
+.nav-list li{
+  margin-left: 40px;
+}
+.nav-list li:hover{
+  cursor: pointer;
+}
+.stripe{
+  font-size: 50px;
+  padding: 5px 20px;
+  margin-left: 20px;
+}
+.sign-btn{
+  background-color: rgb(14, 14, 15);
+  color: rgb(255, 253, 253);
+  margin: 10px 10px 10px 10px;
+  border-radius: 20%;
+}
+
+.hero{
+  clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 71%);
+  background-image: linear-gradient(to left,rgb(248, 72, 248),rgb(161, 232, 252),rgba(237, 237, 135, 0.863),rgb(184, 234, 248));
+  position: absolute;
+  top:0px;
+  z-index: -9999;
+  opacity: 0.9;
+  height: 1000px;
+  width: 100%;
+
+ 
+}
+.hero-btn{
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  display: inline-block;
+ flex-grow: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .menu{
+   
+    display: none;
+    
+  }
+.ham{
+  display: block;
+}
+.nav-list{
+  display: none;
+}
+.sign-btn{
+  display: none;
+}
+.para{
+  padding: 0px;
+  left: 5px;
+}
+.hero{
+  height: 1100px;
+}
+  
+}
+
+.submenu{
+background-color: white;
+  clip-path: polygon(40% 3%, 48% 0, 55% 3%, 100% 3%, 100% 60%, 0% 60%, 0 3%);
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  left:50%;
+  display: none;
+  transition: all 0.7 ease-in-out;
+
+}
+.display-submenu{
+  display: block;
+
+ 
+}
+.list-div > ul{
+  list-style-type: none;
+  display: flex;
+}
